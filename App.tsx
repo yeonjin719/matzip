@@ -1,17 +1,10 @@
-import React, {useState} from 'react';
-import {
-  Button,
-  Image,
-  SafeAreaView,
-  ScrollView,
-  StyleSheet,
-  Text,
-  TextInput,
-  View,
-} from 'react-native';
+import React from 'react';
+import {StyleSheet} from 'react-native';
+import './global.css';
+import RootNavigation from './src/navigations/RootNavigation';
 
-function App(): React.JSX.Element {
-  return <SafeAreaView />;
+function App() {
+  return <RootNavigation />;
 }
 
 const styles = StyleSheet.create({});
