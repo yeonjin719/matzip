@@ -4,8 +4,8 @@ import {createStaticNavigation} from '@react-navigation/native';
 import {MapStack} from './MapNavigation';
 import {FeedStack} from './FeedNavigation';
 import DrawerButton from '../components/DrawerButton';
-import {colors} from '../constants/colors';
 import CustomDrawerContent from '../components/CustomDrawerContent';
+import {colors} from '../constants/colors';
 
 const MainDrawer = createDrawerNavigator({
   screenOptions: {
@@ -18,6 +18,7 @@ const MainDrawer = createDrawerNavigator({
     },
     drawerItemStyle: {
       borderRadius: 5,
+      marginBottom: 5,
     },
     drawerType: 'front',
     drawerActiveTintColor: colors.WHITE,

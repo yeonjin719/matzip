@@ -10,8 +10,9 @@ function CustomDrawerContent(props: DrawerContentComponentProps) {
   return (
     <SafeAreaView className="flex-1">
       <DrawerContentScrollView {...props}>
-        <View>
+        <View className="self-center pb-[30px] gap-[5px]">
           <Image source={require('../assets/default-user.png')} />
+          <Text className="text-center font-[14px]">User</Text>
         </View>
         <DrawerItemList {...props} />
       </DrawerContentScrollView>
