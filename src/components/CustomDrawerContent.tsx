@@ -3,7 +3,8 @@ import {
   DrawerContentScrollView,
   DrawerItemList,
 } from '@react-navigation/drawer';
-import {Image, SafeAreaView, View} from 'react-native';
+import {Image, View} from 'react-native';
+import {SafeAreaView} from 'react-native-safe-area-context';
 import {Text} from 'react-native-gesture-handler';
 
 function CustomDrawerContent(props: DrawerContentComponentProps) {
