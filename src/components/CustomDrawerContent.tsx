@@ -6,7 +6,7 @@ import {
 import {Image, View} from 'react-native';
 import {SafeAreaView} from 'react-native-safe-area-context';
 import {Text} from 'react-native-gesture-handler';
-
+import Setting from '../assets/SETTING.svg';
 function CustomDrawerContent(props: DrawerContentComponentProps) {
   return (
     <SafeAreaView className="flex-1">
@@ -17,8 +17,9 @@ function CustomDrawerContent(props: DrawerContentComponentProps) {
         </View>
         <DrawerItemList {...props} />
       </DrawerContentScrollView>
-      <View className="flex-row justify-end p-[20] border-t-[1px] border-t-gray-200">
-        <Text className="font-[15px]">설정</Text>
+      <View className="flex-row justify-end items-center p-[20] gap-[10px] border-t-[1px] border-t-gray-200">
+        <Setting></Setting>
+        <Text className="font-[16x]">설정</Text>
       </View>
     </SafeAreaView>
   );

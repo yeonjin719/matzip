@@ -1905,6 +1905,55 @@ PODS:
     - ReactCommon/turbomodule/bridging
     - ReactCommon/turbomodule/core
     - Yoga
+  - RNSVG (15.15.0):
+    - DoubleConversion
+    - glog
+    - hermes-engine
+    - RCT-Folly (= 2024.11.18.00)
+    - RCTRequired
+    - RCTTypeSafety
+    - React-Core
+    - React-debug
+    - React-Fabric
+    - React-featureflags
+    - React-graphics
+    - React-hermes
+    - React-ImageManager
+    - React-jsi
+    - React-NativeModulesApple
+    - React-RCTFabric
+    - React-renderercss
+    - React-rendererdebug
+    - React-utils
+    - ReactCodegen
+    - ReactCommon/turbomodule/bridging
+    - ReactCommon/turbomodule/core
+    - RNSVG/common (= 15.15.0)
+    - Yoga
+  - RNSVG/common (15.15.0):
+    - DoubleConversion
+    - glog
+    - hermes-engine
+    - RCT-Folly (= 2024.11.18.00)
+    - RCTRequired
+    - RCTTypeSafety
+    - React-Core
+    - React-debug
+    - React-Fabric
+    - React-featureflags
+    - React-graphics
+    - React-hermes
+    - React-ImageManager
+    - React-jsi
+    - React-NativeModulesApple
+    - React-RCTFabric
+    - React-renderercss
+    - React-rendererdebug
+    - React-utils
+    - ReactCodegen
+    - ReactCommon/turbomodule/bridging
+    - ReactCommon/turbomodule/core
+    - Yoga
   - RNWorklets (0.6.1):
     - DoubleConversion
     - glog
@@ -2059,6 +2108,7 @@ DEPENDENCIES:
   - RNGestureHandler (from `../node_modules/react-native-gesture-handler`)
   - RNReanimated (from `../node_modules/react-native-reanimated`)
   - RNScreens (from `../node_modules/react-native-screens`)
+  - RNSVG (from `../node_modules/react-native-svg`)
   - RNWorklets (from `../node_modules/react-native-worklets`)
   - Yoga (from `../node_modules/react-native/ReactCommon/yoga`)
 
@@ -2216,6 +2266,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native-reanimated"
   RNScreens:
     :path: "../node_modules/react-native-screens"
+  RNSVG:
+    :path: "../node_modules/react-native-svg"
   RNWorklets:
     :path: "../node_modules/react-native-worklets"
   Yoga:
@@ -2290,16 +2342,17 @@ SPEC CHECKSUMS:
   React-timing: b48668e99cf2e2d0d70789171c235e11ac94bf43
   React-utils: 867986cdfcfd037ade84e5bc820841e9c126dd6a
   ReactAppDependencyProvider: 04be2a00933bf0930cafcc4da1e0760143573d82
-  ReactCodegen: 04aa24daff1215e40f2a9e4f7772e2bbceb69727
+  ReactCodegen: fb51a603d663dea94592d8d38247705d3473457e
   ReactCommon: 2bc79208d91eda74edeff759d82c93460b07612f
   RNCMaskedView: 3e8d6bf9764b519d077986413882959eafceffbc
   RNGestureHandler: bff91bb5ab5688265c70f74180ef718b94f33fe3
-  RNReanimated: 32eb51c98f8ad6cdc117f4f5a7f79f09b60f0648
+  RNReanimated: 2fe42fa343f42205803dd5324f4fbdac3882bb7d
   RNScreens: ff9b889ead6100d019d236599741efc1c4586128
-  RNWorklets: 3025a4b296f21484c6ab98a2107985f539eed58d
+  RNSVG: 0acc7ca0f7333616497df18fa799d0c736662e92
+  RNWorklets: 8f92bb073260471755eeb5c4aca05fd13f89737a
   SocketRocket: d4aabe649be1e368d1318fdf28a022d714d65748
-  Yoga: a6cb833e04fb8c59a012b49fb1d040fcb0cbb633
+  Yoga: 9cb1d1ce8507db40a1821da861bde88bf9fa060c
 
 PODFILE CHECKSUM: 4778a8854152a500425e4e614238d9eefbf4fb30
 
-COCOAPODS: 1.16.2
+COCOAPODS: 1.15.2

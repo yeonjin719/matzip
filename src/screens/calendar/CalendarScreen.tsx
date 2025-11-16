@@ -1,5 +1,4 @@
-import {Text} from 'react-native';
-import {SafeAreaView} from 'react-native-safe-area-context';
+import {Text, SafeAreaView} from 'react-native';
 function CalendarScreen() {
   return (
     <SafeAreaView>
