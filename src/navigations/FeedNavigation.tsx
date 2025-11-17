@@ -3,17 +3,17 @@ import FeedListScreen from '../screens/feed/FeedListScreen';
 import FeedDetailScreen from '../screens/feed/FeedDetailScreen';
 import FeedFavoriteScreen from '../screens/feed/FeedFavoriteScreen';
 import EditLocationScreen from '../screens/feed/EditLocationScreen';
-import {colors} from '../constants/colors';
 import DrawerButton from '../components/DrawerButton';
+import colors from '../styles/colors';
 
 export const FeedStack = createStackNavigator({
   screenOptions: {
     headerTitleAlign: 'center',
     headerBackButtonDisplayMode: 'minimal',
-    headerTintColor: colors.BLACK,
+    headerTintColor: colors.black,
     headerStyle: {
-      backgroundColor: colors.WHITE,
-      shadowColor: colors.GRAY_500,
+      backgroundColor: colors.white,
+      shadowColor: colors.gray[500],
     },
     headerTitleStyle: {
       fontSize: 16,

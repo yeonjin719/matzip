@@ -5,13 +5,13 @@ import {MapStack} from './MapNavigation';
 import {FeedStack} from './FeedNavigation';
 import DrawerButton from '../components/DrawerButton';
 import CustomDrawerContent from '../components/CustomDrawerContent';
-import {colors} from '../constants/colors';
+import colors from '../styles/colors';
 
 const MainDrawer = createDrawerNavigator({
   screenOptions: {
     drawerStyle: {
       width: '60%',
-      backgroundColor: colors.WHITE,
+      backgroundColor: colors.white,
     },
     drawerLabelStyle: {
       fontWeight: '600',
@@ -21,16 +21,16 @@ const MainDrawer = createDrawerNavigator({
       marginBottom: 5,
     },
     drawerType: 'front',
-    drawerActiveTintColor: colors.WHITE,
-    drawerActiveBackgroundColor: colors.PINK_700,
-    drawerInactiveTintColor: colors.GRAY_500,
-    drawerInactiveBackgroundColor: colors.GRAY_100,
+    drawerActiveTintColor: colors.white,
+    drawerActiveBackgroundColor: colors.pink[700],
+    drawerInactiveTintColor: colors.gray[500],
+    drawerInactiveBackgroundColor: colors.gray[100],
     headerTitleAlign: 'center',
     headerBackButtonDisplayMode: 'minimal',
-    headerTintColor: colors.BLACK,
+    headerTintColor: colors.black,
     headerStyle: {
-      backgroundColor: colors.WHITE,
-      shadowColor: colors.GRAY_500,
+      backgroundColor: colors.white,
+      shadowColor: colors.gray[500],
     },
     headerTitleStyle: {
       fontSize: 16,
