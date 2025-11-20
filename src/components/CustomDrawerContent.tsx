@@ -18,7 +18,7 @@ function CustomDrawerContent(props: DrawerContentComponentProps) {
         <DrawerItemList {...props} />
       </DrawerContentScrollView>
       <View className="flex-row justify-end items-center p-[20] gap-[10px] border-t-[1px] border-t-gray-200">
-        <Setting></Setting>
+        <Setting />
         <Text className="font-[16x]">설정</Text>
       </View>
     </SafeAreaView>

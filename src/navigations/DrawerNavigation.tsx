@@ -3,9 +3,9 @@ import CalendarScreen from '../screens/calendar/CalendarScreen';
 import {createStaticNavigation} from '@react-navigation/native';
 import {MapStack} from './MapNavigation';
 import {FeedStack} from './FeedNavigation';
-import DrawerButton from '../components/DrawerButton';
 import CustomDrawerContent from '../components/CustomDrawerContent';
 import colors from '../styles/colors';
+import DrawerButton from '../components/DrawerButton';
 
 const MainDrawer = createDrawerNavigator({
   screenOptions: {
@@ -42,6 +42,7 @@ const MainDrawer = createDrawerNavigator({
       options: {
         title: '홈',
         headerShown: false,
+        headerLeft: () => <DrawerButton />,
       },
     },
     Feed: {
