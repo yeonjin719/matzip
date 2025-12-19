@@ -1,4 +1,4 @@
-import {SafeAreaView, Text} from 'react-native';
+import {Text, SafeAreaView} from 'react-native';
 
 function FeedDetailScreen() {
   return (
