@@ -6,13 +6,13 @@ import {
 import {Image, View} from 'react-native';
 import {SafeAreaView} from 'react-native-safe-area-context';
 import {Text} from 'react-native-gesture-handler';
-import Setting from '../assets/SETTING.svg';
+import Setting from '@/assets/SETTING.svg';
 function CustomDrawerContent(props: DrawerContentComponentProps) {
   return (
     <SafeAreaView className="flex-1">
       <DrawerContentScrollView {...props}>
         <View className="self-center pb-[30px] gap-[5px]">
-          <Image source={require('../assets/default-user.png')} />
+          <Image source={require('@/assets/default-user.png')} />
           <Text className="text-center font-[14px]">User</Text>
         </View>
         <DrawerItemList {...props} />

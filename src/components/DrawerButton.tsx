@@ -1,9 +1,9 @@
 import {DrawerNavigationProp} from '@react-navigation/drawer';
 import {useNavigation} from '@react-navigation/native';
 import {Pressable} from 'react-native';
-import {MainDrawerParamList} from '../types/navigation';
+import {MainDrawerParamList} from '@/types/navigation';
 import Ionicons from '@react-native-vector-icons/ionicons';
-import colors from '../styles/colors';
+import colors from '@/styles/colors';
 
 type Navigation = DrawerNavigationProp<MainDrawerParamList>;
 function DrawerButton({color = colors.black}) {
@@ -16,7 +16,7 @@ function DrawerButton({color = colors.black}) {
     <Pressable
       onPress={openDrawer}
       className={'flex items-start justify-start h-fit pl-[18px]'}>
-      <Ionicons name="menu" size={25} color={color}/>
+      <Ionicons name="menu" size={25} color={color} />
     </Pressable>
   );
 }
