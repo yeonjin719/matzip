@@ -20,7 +20,7 @@ function CustomDrawerContent(props: DrawerContentComponentProps) {
       </DrawerContentScrollView>
       <View className="flex-row justify-end items-center p-[20] gap-[10px] border-t-[1px] border-t-gray-200">
         <Ionicons name="settings-outline" size={24} />
-        <Text className="font-[16x]">설정</Text>
+        <Text className="font-[16px]">설정</Text>
       </View>
     </SafeAreaView>
   );

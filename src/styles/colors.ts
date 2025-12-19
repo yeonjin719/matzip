@@ -10,7 +10,7 @@ const colors = {
   },
   blue: {
     400: '#B4E0FF',
-    500: '0D8AFF',
+    500: '#0D8AFF',
   },
   green: {
     400: '#CCE6BA',

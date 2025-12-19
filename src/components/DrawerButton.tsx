@@ -9,7 +9,6 @@ type Navigation = DrawerNavigationProp<MainDrawerParamList>;
 function DrawerButton({color = colors.black}) {
   const navigation = useNavigation<Navigation>();
   const openDrawer = () => {
-    console.log('Drawer opened');
     navigation.openDrawer();
   };
   return (
