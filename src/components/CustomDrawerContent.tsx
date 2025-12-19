@@ -6,7 +6,8 @@ import {
 import {Image, View} from 'react-native';
 import {SafeAreaView} from 'react-native-safe-area-context';
 import {Text} from 'react-native-gesture-handler';
-import Setting from '@/assets/SETTING.svg';
+import Ionicons from '@react-native-vector-icons/ionicons';
+
 function CustomDrawerContent(props: DrawerContentComponentProps) {
   return (
     <SafeAreaView className="flex-1">
@@ -18,7 +19,7 @@ function CustomDrawerContent(props: DrawerContentComponentProps) {
         <DrawerItemList {...props} />
       </DrawerContentScrollView>
       <View className="flex-row justify-end items-center p-[20] gap-[10px] border-t-[1px] border-t-gray-200">
-        <Setting />
+        <Ionicons name="settings-outline" size={24} />
         <Text className="font-[16x]">설정</Text>
       </View>
     </SafeAreaView>
