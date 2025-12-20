@@ -17,9 +17,7 @@ function CustomDrawerContent(props: DrawerContentComponentProps) {
       <DrawerContentScrollView {...props}>
         <View className="self-center pb-[30px] gap-[5px]">
           <Image source={require('@/assets/default-user.png')} />
-          <Text className="text-center font-[14px]">
-            {auth.nickname || 'User'}
-          </Text>
+          <Text className="text-center font-[14px]">{auth.nickname}</Text>
         </View>
         <DrawerItemList {...props} />
       </DrawerContentScrollView>
