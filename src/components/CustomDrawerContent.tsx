@@ -11,7 +11,6 @@ import useAuth from '@/hooks/useAuth';
 
 function CustomDrawerContent(props: DrawerContentComponentProps) {
   const {auth} = useAuth();
-  console.log(auth);
   return (
     <SafeAreaView className="flex-1">
       <DrawerContentScrollView {...props}>
