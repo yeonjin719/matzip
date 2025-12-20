@@ -21,7 +21,7 @@ const LoginScreen = () => {
   });
   const {handleSubmit} = methods;
 
-  const onSubmit = (data: any) => {
+  const onSubmit = (data: LoginFormValues) => {
     loginMutation.mutate(data);
   };
 
