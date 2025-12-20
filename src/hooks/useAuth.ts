@@ -13,7 +13,6 @@ import {removeEncryptStorage, setEncryptStorage} from '@/utils/encryptStorage';
 import {removeHeader, setHeader} from '@/utils/header';
 import {useMutation, useQuery, useQueryClient} from '@tanstack/react-query';
 import {useEffect} from 'react';
-import {ref} from 'yup';
 
 function useSignup(mutationOptions?: UseMutationCustomOptions) {
   return useMutation({
