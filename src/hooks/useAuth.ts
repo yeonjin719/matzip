@@ -101,10 +101,16 @@ function useAuth() {
 
   const refreshTokenQuery = useGetRefreshToken();
   const logoutMutation = useLogout();
-  const {isSuccess: isLogin} = useGetProfile({
+  const {data, isSuccess: isLogin} = useGetProfile({
     enabled: !!refreshTokenQuery.isSuccess,
   });
   return {
+    auth: {
+      id: data?.id || '',
+      email: data?.email || '',
+      nickname: data?.nickname || '',
+      imageUri: data?.imageUri || '',
+    },
     signupMutation,
     loginMutation,
     isLogin,
