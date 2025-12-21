@@ -54,8 +54,10 @@ function useGetRefreshToken() {
     if (!data) {
       return;
     }
-    setHeader('Authorization', `Bearer ${data.accessToken}`);
-    setEncryptStorage(storageKeys.REFRESH_TOKEN, data.refreshToken);
+    async () => {
+      setHeader('Authorization', `Bearer ${data.accessToken}`);
+      await setEncryptStorage(storageKeys.REFRESH_TOKEN, data.refreshToken);
+    };
 
     queryClient.refetchQueries({
       queryKey: [queryKeys.AUTH, queryKeys.GET_PROFILE],
@@ -68,7 +70,9 @@ function useGetRefreshToken() {
     }
 
     removeHeader('Authorization');
-    removeEncryptStorage(storageKeys.REFRESH_TOKEN);
+    (async () => {
+      await removeEncryptStorage(storageKeys.REFRESH_TOKEN);
+    })();
   }, [isError]);
 
   return {isSuccess, isError};
@@ -106,7 +110,7 @@ function useAuth() {
   });
   return {
     auth: {
-      id: data?.id || '',
+      id: data?.id || 0,
       email: data?.email || '',
       nickname: data?.nickname || '',
       imageUri: data?.imageUri || '',
