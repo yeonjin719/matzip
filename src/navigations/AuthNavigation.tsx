@@ -34,7 +34,7 @@ const AuthStack = createStackNavigator({
         title: '로그인',
       },
     },
-    SignUp: {
+    Signup: {
       screen: SignupScreen,
       options: {
         title: '회원가입',
